@@ -21,3 +21,18 @@ header {
   height: 150px;
   border-bottom: 1px solid red;
 }
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  padding: 20px;
+  border: 3px solid red;
+  border-top: 1px solid red;
+  background-image: url("./assets/hero-background.jpg");
+  /* background-color: rgb(31, 29, 29); */
+  /* border: 3px solid white; */
+  
+}
