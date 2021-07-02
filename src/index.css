@@ -12,8 +12,15 @@ html {
 body {
   background-color: #262626;
   min-height: 100%;
+  color: white;
 }
 
 header {
   background-color: #002b53;
+  background-image: url("./assets/hero-background.jpg");
+  height: 150px;
+}
+
+h1 {
+  color: white;
 }
