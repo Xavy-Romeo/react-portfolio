@@ -36,3 +36,20 @@ footer {
   /* border: 3px solid white; */
   
 }
+
+main {
+  color: rgb(28, 78, 240);
+  margin: 20px 30px;
+}
+.profile-img {
+  border: 2px solid red;
+  /* margin: 10px;
+  padding: 10px; */
+}
+
+.interest-images img {
+  height: 150px;
+  border: 2px solid red;
+  margin: 10px;
+  padding: 10px;
+}
