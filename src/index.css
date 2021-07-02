@@ -12,7 +12,7 @@ html {
 body {
   background-color: black;
   min-height: 100%;
-  color: white;
+  color:rgb(28, 78, 240);
 }
 
 header {
@@ -37,7 +37,7 @@ footer {
   
 }
 
-main {
+main, a {
   color: rgb(28, 78, 240);
   margin: 20px 30px;
 }
