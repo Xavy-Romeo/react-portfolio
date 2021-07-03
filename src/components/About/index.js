@@ -7,6 +7,7 @@ import soccer from '../../assets/soccer-ball.png'
 // use map to display pics
 
 const About = () => {
+
     return (
         <section>
             <h3>About Me</h3>
@@ -21,6 +22,15 @@ const About = () => {
                 <img src={barbell} alt="barbell image"></img>
                 
             </div>
+
+            {/* <div>
+                {portfolioImages.map((i) => (
+                    <img 
+                        src={require(`../../assets/${i}.png`)}
+                        key={i} 
+                    />                   
+                ))}
+            </div> */}
 
         </section>
     );
