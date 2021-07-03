@@ -1,32 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Nav = () => {
-    
-    // nav sections array
-    const [navSection] = useState([
-        {name: 'Contact Me'}, 
-        {name: 'Portfolio'}, 
-        {name: 'Resume'}
-    ]);
+const Nav = ({ navSection, setCurrentSection, currentSection, setAboutSelected, aboutSelected }) => {  
 
-    const [currentSection, setCurrentSection] = useState(navSection[0]);
-
-    console.log('the current section is', currentSection);
+    // useEffect hook to set current tab title
+    useEffect(() => {
+        {aboutSelected
+            ? document.title = 'Xavy-Romeo'
+            : document.title = currentSection  
+        }
+    });
 
     return (
         <nav>
             <ul>
                 <li>
-                    <a href="#about-me">
+                    <span onClick={() => {setAboutSelected(true)}}>
                         About Me
-                    </a>
+                    </span>
                 </li>
                 
                 {navSection.map((section) => (
                     <li
                         key={section.name}
                     >
-                        <span onClick={() => {setCurrentSection(section.name)}}>
+                        <span onClick={() => {
+                                setCurrentSection(section.name)
+                                setAboutSelected(false)
+                            }}>
                             {section.name}
                         </span>
                     </li>

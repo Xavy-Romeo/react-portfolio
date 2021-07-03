@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from '../Navigation';
 
-const Header = () => {
+const Header = ({ navSection, setCurrentSection, currentSection, setAboutSelected, aboutSelected }) => {
     return (
         <header>
             <h1>
@@ -10,7 +10,13 @@ const Header = () => {
                 </a>
             </h1>
 
-            <Nav></Nav>
+            <Nav
+                navSection={navSection}
+                setCurrentSection={setCurrentSection}
+                currentSection={currentSection}
+                setAboutSelected={setAboutSelected}
+                aboutSelected={aboutSelected}
+            ></Nav>
         </header>
     )
 };
