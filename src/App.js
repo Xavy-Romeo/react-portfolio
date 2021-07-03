@@ -7,15 +7,15 @@ import Project from './components/Project';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 
-function App() {
+function App() {  
   return (
     <div>
       <Header></Header>
 
       <main>
-        {/* <Contact></Contact> */}
-        {/* <About></About> */}
-        {/* <Project></Project> */}
+        <Contact></Contact>
+        <About></About>
+        <Project></Project>
         <Resume></Resume>
       </main>
 
