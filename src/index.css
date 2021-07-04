@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #06aed5;
+  --secondary-color: rgb(195, 2, 2);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,51 +10,73 @@
 }
 
 html {
-  border: 3px solid red;
+  border: 3px solid var(--secondary-color);
   min-height: 100%;
 }
 
 body {
   background-color: black;
   min-height: 100%;
-  color:rgb(28, 78, 240);
+  font-family: 'Cardo', serif;
+  color: var(--primary-color);
+  font-size: 20px;
 }
 
 header {
-  background-color: #002b53;
-  background-image: url("./assets/hero-background.jpg");
-  height: 150px;
-  border-bottom: 1px solid red;
+  font-family: "Kaushan Script", sans-serif;
+  background-image: url('./assets/hero-background.jpg');
+  height: 80px;
+  border-bottom: 1px solid var(--secondary-color);
+  justify-content: space-between;
+}
+
+.header-name-container {
+  margin: 8px 12px;
+}
+
+.header-name {
+  padding: 5px 20px;
+  
+  font-size: 50px;
+  font-weight: bold;
+  color: #06aed5;
+  text-decoration: none;
+  text-shadow: 3px 3px black;
+}
+
+.nav-container {
+  padding: 40px 0 0 0;
+}
+
+.nav-sections {
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.nav-sections span {
+  font-size: 24px;
+  color: var(--primary-color);
+  text-shadow: 2px 2px black;
 }
 
 footer {
-  position: absolute;
+  /* position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0; */
   height: 100px;
   padding: 20px;
-  border: 3px solid red;
-  border-top: 1px solid red;
+  /* border: 3px solid red;
+  border-top: 1px solid red; */
   background-image: url("./assets/hero-background.jpg");
   /* background-color: rgb(31, 29, 29); */
   /* border: 3px solid white; */
   
 }
 
-main, a {
-  color: rgb(28, 78, 240);
-  margin: 20px 30px;
-}
-.profile-img {
-  border: 2px solid red;
-  /* margin: 10px;
-  padding: 10px; */
-}
-
 .interest-images img {
   height: 150px;
-  border: 2px solid red;
+  border: 2px solid var(--secondary-color);
   margin: 10px;
   padding: 10px;
 }

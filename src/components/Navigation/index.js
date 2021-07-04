@@ -12,7 +12,7 @@ const Nav = ({ navSection, setCurrentSection, currentSection, setAboutSelected, 
 
     return (
         <nav>
-            <ul>
+            <ul className=" row nav-sections">
                 <li>
                     <span onClick={() => {setAboutSelected(true)}}>
                         About Me

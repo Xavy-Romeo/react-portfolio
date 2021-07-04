@@ -4,19 +4,25 @@ import Nav from '../Navigation';
 const Header = ({ navSection, setCurrentSection, currentSection, setAboutSelected, aboutSelected }) => {
     return (
         <header>
-            <h1>
-                <a href="/">
-                    Xavy Romeo
-                </a>
-            </h1>
+            <div className="row header-container">
+                <div className="col-4 header-name-container">
+                    <h1>
+                        <a href="/" className="header-name">
+                            Xavy Romeo
+                        </a>
+                    </h1>
+                </div>
 
-            <Nav
-                navSection={navSection}
-                setCurrentSection={setCurrentSection}
-                currentSection={currentSection}
-                setAboutSelected={setAboutSelected}
-                aboutSelected={aboutSelected}
-            ></Nav>
+                <div className="col-7 nav-container">
+                    <Nav
+                        navSection={navSection}
+                        setCurrentSection={setCurrentSection}
+                        currentSection={currentSection}
+                        setAboutSelected={setAboutSelected}
+                        aboutSelected={aboutSelected}
+                    ></Nav>
+                </div>
+            </div>
         </header>
     )
 };
