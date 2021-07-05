@@ -22,6 +22,10 @@ body {
   font-size: 20px;
 }
 
+main {
+  margin: 20px 30px;
+}
+
 header {
   font-family: "Kaushan Script", sans-serif;
   background-image: url('./assets/hero-background.jpg');
@@ -59,24 +63,52 @@ header {
   text-shadow: 2px 2px black;
 }
 
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  /* margin: 0 0 0 140px; */
+  text-decoration: underline;
+}
+
+.profile-img {
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  padding: 10px;
+  margin: 15px 50px 15px 0;
+  float: left;
+}
+
+.about-par {
+  font-size: 24px;
+  margin: 25px 0 10px 0;
+  text-align: justify;
+}
+
+.interest-images {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 25px 0 50px 0;
+}
+
+.interest-images img {
+  height: 200px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+
 footer {
   /* position: absolute;
   left: 0;
   right: 0;
   bottom: 0; */
-  height: 100px;
+  height: 80px;
   padding: 20px;
-  /* border: 3px solid red;
-  border-top: 1px solid red; */
+  /* border: 3px solid red; */
+  border-top: 1px solid red;
   background-image: url("./assets/hero-background.jpg");
   /* background-color: rgb(31, 29, 29); */
   /* border: 3px solid white; */
   
 }
 
-.interest-images img {
-  height: 150px;
-  border: 2px solid var(--secondary-color);
-  margin: 10px;
-  padding: 10px;
-}
