@@ -66,8 +66,9 @@ header {
 .section-title {
   font-size: 32px;
   font-weight: bold;
-  /* margin: 0 0 0 140px; */
+  text-align: center;
   text-decoration: underline;
+  margin: 50px 0 80px 0;
 }
 
 .profile-img {
@@ -80,7 +81,7 @@ header {
 
 .about-par {
   font-size: 24px;
-  margin: 25px 0 10px 0;
+  margin: 100px 0 10px 0;
   text-align: justify;
 }
 
@@ -95,6 +96,50 @@ header {
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
   padding: 10px;
+}
+
+.contact-form {
+  border: 2px solid ;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(231, 231, 231, 0.3);
+  padding: 10px 20px;
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgb(6, 174, 213, 0.3);
+}
+
+.contact-form label {
+  margin: 10px 0;
+  text-shadow: 2px 2px black;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--primary-color);
+  background-color: rgb(231, 231, 231);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgb(141, 141, 141);
+  outline: none;
+}
+
+.contact-form button {
+  font-weight: bold;
+  color: black;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  width: 80%;
+  margin: 10px 10%;
+  border: 2px solid black;
+  transition: .7s ease-out;
+}
+
+.contact-form button:hover {
+  color: var(--primary-color);
+  background-color: black;
+  border: 2px solid var(--primary-color);
 }
 
 footer {
