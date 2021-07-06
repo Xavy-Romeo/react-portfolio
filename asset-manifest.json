@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/http//Xavy-Romeo.github.io/portfolio/static/css/main.cda9a9e3.chunk.css",
+    "main.js": "/http//Xavy-Romeo.github.io/portfolio/static/js/main.1d1d410d.chunk.js",
+    "main.js.map": "/http//Xavy-Romeo.github.io/portfolio/static/js/main.1d1d410d.chunk.js.map",
+    "runtime-main.js": "/http//Xavy-Romeo.github.io/portfolio/static/js/runtime-main.12d68acf.js",
+    "runtime-main.js.map": "/http//Xavy-Romeo.github.io/portfolio/static/js/runtime-main.12d68acf.js.map",
+    "static/js/2.ce7d3402.chunk.js": "/http//Xavy-Romeo.github.io/portfolio/static/js/2.ce7d3402.chunk.js",
+    "static/js/2.ce7d3402.chunk.js.map": "/http//Xavy-Romeo.github.io/portfolio/static/js/2.ce7d3402.chunk.js.map",
+    "static/js/3.9b245b38.chunk.js": "/http//Xavy-Romeo.github.io/portfolio/static/js/3.9b245b38.chunk.js",
+    "static/js/3.9b245b38.chunk.js.map": "/http//Xavy-Romeo.github.io/portfolio/static/js/3.9b245b38.chunk.js.map",
+    "index.html": "/http//Xavy-Romeo.github.io/portfolio/index.html",
+    "static/css/main.cda9a9e3.chunk.css.map": "/http//Xavy-Romeo.github.io/portfolio/static/css/main.cda9a9e3.chunk.css.map",
+    "static/js/2.ce7d3402.chunk.js.LICENSE.txt": "/http//Xavy-Romeo.github.io/portfolio/static/js/2.ce7d3402.chunk.js.LICENSE.txt",
+    "static/media/AvatarMaker (1).2effc877.png": "/http//Xavy-Romeo.github.io/portfolio/static/media/AvatarMaker (1).2effc877.png",
+    "static/media/LinkedIn.9b59fa92.svg": "/http//Xavy-Romeo.github.io/portfolio/static/media/LinkedIn.9b59fa92.svg",
+    "static/media/Sample-Resume.a59c7b1b.png": "/http//Xavy-Romeo.github.io/portfolio/static/media/Sample-Resume.a59c7b1b.png",
+    "static/media/barbell-clipart.67bf2f51.jpg": "/http//Xavy-Romeo.github.io/portfolio/static/media/barbell-clipart.67bf2f51.jpg",
+    "static/media/cinfo.bb1c67dd.png": "/http//Xavy-Romeo.github.io/portfolio/static/media/cinfo.bb1c67dd.png",
+    "static/media/index.css": "/http//Xavy-Romeo.github.io/portfolio/static/media/hero-background.31ceeb8d.jpg",
+    "static/media/manage-it.f22db430.png": "/http//Xavy-Romeo.github.io/portfolio/static/media/manage-it.f22db430.png",
+    "static/media/run-buddy.000e1b5f.jpg": "/http//Xavy-Romeo.github.io/portfolio/static/media/run-buddy.000e1b5f.jpg",
+    "static/media/soccer-ball.d29e0e0d.png": "/http//Xavy-Romeo.github.io/portfolio/static/media/soccer-ball.d29e0e0d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12d68acf.js",
+    "static/js/2.ce7d3402.chunk.js",
+    "static/css/main.cda9a9e3.chunk.css",
+    "static/js/main.1d1d410d.chunk.js"
+  ]
+}
