@@ -40,12 +40,16 @@ header {
 
 .header-name {
   padding: 5px 20px;
-  
   font-size: 50px;
   font-weight: bold;
   color: #06aed5;
   text-decoration: none;
   text-shadow: 3px 3px black;
+}
+
+.header-name:hover {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 .nav-container {
@@ -61,6 +65,10 @@ header {
   font-size: 24px;
   color: var(--primary-color);
   text-shadow: 2px 2px black;
+}
+
+.nav-sections span:hover {
+  color: var(--secondary-color);
 }
 
 .section-title {
@@ -276,18 +284,62 @@ header {
 }
 
 footer {
-  /* position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0; */
   height: 80px;
-  padding: 20px;
-  /* border: 3px solid red; */
   border-top: 1px solid red;
   background-image: url("./assets/hero-background.jpg");
-  /* background-color: rgb(31, 29, 29); */
-  /* border: 3px solid white; */
-  
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-banner {
+  width: 60%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-banner h2 {
+  animation: marquee 20s linear infinite;
+  text-shadow: 2px 2px black;
+}
+
+.footer-banner h2:hover {
+  color: var(--secondary-color);
+}
+
+.footer-half {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 5px;
+}
+
+.footer-icons img {
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 70px;
+  width: 70px;
+  background-color: white;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-copy {
+  width: 35%;
+}
+
+.footer-copy p {
+  margin: 0;
+  padding: 5px 0 0 0;
 }
 
 @keyframes wiggle {
@@ -296,4 +348,10 @@ footer {
   20% { transform: translate(-3px, 0px) rotate(1deg); }
   30% { transform: translate(3px, 2px) rotate(0deg); }
   40% { transform: translate(1px, -1px) rotate(1deg); }
+}
+
+@keyframes marquee {
+  0% {transform: translateX(100%);}
+ /* 50% {transform: translateX(0);} */
+ 100% {transform: translateX(-100%);} 
 }
