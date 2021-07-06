@@ -142,6 +142,121 @@ header {
   border: 2px solid var(--primary-color);
 }
 
+.main-project-container {
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  height: 350px;
+  width: 70%;
+  padding: 10px;
+  margin: 0 auto 25px auto;
+}
+
+.main-project {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+
+.main-project-container:hover {
+  transform: scale(1.2);
+}
+
+.main-project img {
+  border-radius: 10px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.project-div:hover {
+  transform: scale(1.1);
+}
+
+.project img {
+  border-radius: 10px;
+}
+
+.project-div {
+  width: 40%;
+  height: 250px;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+}
+
+.link-div {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 5px;
+  display: flex;
+}
+
+.link-div:hover {
+  opacity: 1;
+}
+
+.feature-links {
+  padding: 50px;
+}
+
+.project-links {
+  padding: 150px 10px 0 10px;
+}
+
+.link-div a {
+  text-decoration: none;
+  height: 50px;
+}
+
+.link-div h4 {
+  margin: 20px;
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  width: 142px;
+  text-align: center;
+}
+
+.link-div h4:hover {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 142px;
+  background-color: var(--primary-color);
+}
+
+.link-div img{
+  width: 80px;
+}
+
+.link-div img:hover {
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.cinfo {
+  background-color: var(--primary-color);
+}
+
+.cinfo-logo {
+  margin: 40px 0 ;
+}
+
 footer {
   /* position: absolute;
   left: 0;
