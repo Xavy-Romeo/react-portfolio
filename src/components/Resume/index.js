@@ -4,8 +4,10 @@ import sampleResume from '../../assets/Sample-Resume.png'
 const Resume = () => {
     return (
         <section>
-            Resume
-            <img src={sampleResume}></img>
+            <h3 className="section-title">Resume</h3>
+            <div className="resume-container">
+                <img src={sampleResume}></img>
+            </div>
         </section>
     );
 };

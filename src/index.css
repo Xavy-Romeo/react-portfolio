@@ -79,6 +79,11 @@ header {
   float: left;
 }
 
+.profile-img:hover {
+  transform: scale(1.1);
+  animation: wiggle 2s;
+}
+
 .about-par {
   font-size: 24px;
   margin: 100px 0 10px 0;
@@ -96,6 +101,10 @@ header {
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
   padding: 10px;
+}
+
+.interest-images img:hover {
+  animation: wiggle 1s;
 }
 
 .contact-form {
@@ -257,6 +266,15 @@ header {
   margin: 40px 0 ;
 }
 
+.resume-container {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-container img {
+  border: 5px solid white;
+}
+
 footer {
   /* position: absolute;
   left: 0;
@@ -272,3 +290,10 @@ footer {
   
 }
 
+@keyframes wiggle {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+}
