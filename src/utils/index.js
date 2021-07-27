@@ -21,5 +21,3 @@ export const debounce = callback => {
         }, 200);
     };
 };
-
-// export default { throttle, debounce };

@@ -12,21 +12,29 @@ const Nav = ({ navSection, setCurrentSection, currentSection, setAboutSelected, 
 
     return (
         <nav>
-            <ul className=" row nav-sections">
+            <ul className='row nav-sections'>
                 <li>
-                    <span onClick={() => {setAboutSelected(true)}}>
+                    <span 
+                        // className='nav-li'
+                        onClick={() => {setAboutSelected(true)}}
+                        id='About Me'
+                    >
                         About Me
                     </span>
                 </li>
                 
                 {navSection.map((section) => (
-                    <li
+                    <li 
+                        // className='nav-li'
                         key={section.name}
                     >
-                        <span onClick={() => {
+                        <span 
+                            onClick={() => {
                                 setCurrentSection(section.name)
                                 setAboutSelected(false)
-                            }}>
+                            }}
+                            id={section.name}
+                        >
                             {section.name}
                         </span>
                     </li>
