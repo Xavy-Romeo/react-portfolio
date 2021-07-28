@@ -8,7 +8,6 @@ const Header = ({ navSection, setCurrentSection, currentSection, setAboutSelecte
 
     const changeHeader = () => {
         if (window.scrollY > 50) {
-            console.log('hi hi hi');
             setHeaderActive(true);
         }
         else {
@@ -21,15 +20,18 @@ const Header = ({ navSection, setCurrentSection, currentSection, setAboutSelecte
         return () => window.removeEventListener('scroll', throttle(debounce(changeHeader)));
     }, []);
     
-    
     return (
         <header id='header' className={headerActive ? 'header-active': null}>
-            {/* <div className={headerActive ? 'row header-div header-active' : 'row header-div'}> */}
             <div className='row'>
                 <div className='col-4 header-name-container'>
                     <h1>
-                        <a href='/' className='header-name'>
-                            Xavy Romeo
+                        <a 
+                            href='/'
+                            
+                        >
+                            <span id='my-name' className='header-name'>
+                                Xavy Romeo
+                            </span>
                         </a>
                     </h1>
                 </div>

@@ -10,7 +10,6 @@
 }
 
 html {
-  /* border: 3px solid var(--secondary-color); */
   min-height: 100%;
 }
 
@@ -27,40 +26,30 @@ main {
 }
 
 header {
-  /* background-color: rgb(100, 100, 100); */
-  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
   background: rgb(2,0,36);
   background: linear-gradient(349deg, rgba(2,0,36,1) 0%, rgba(114,18,20,1) 16%, rgba(121,9,9,1) 47%, rgba(10,163,194,1) 100%);
   font-family: "Kaushan Script", sans-serif;
-  /* background-image: url('./assets/hero-background.jpg'); */
   height: 75px;
-  /* margin-bottom: -80px; */
-  /* border-bottom: 1px solid var(--secondary-color); */
   justify-content: space-between;
-  
   position: -webkit-sticky; /* to support Safari */
   position: sticky;
   top: 0;
   z-index: 9999;
-
 }
 
 .header-active {
-  /* background-image: url('./assets/hero-background.jpg'); */
-  /* height: 10px; */
   transform: scaleY(.7) translate(0%, -30%);
-  /* margin-top: -30px; */
 }
 
 .header-name-container {
-  margin: 8px 12px;
+  margin: 0 12px;
 }
 
 .header-name {
+  float: left;
   padding: 5px 20px;
   font-size: 50px;
   font-weight: bold;
-  /* color: #06aed5; */
   color: var(--secondary-color);
   text-decoration: none;
   text-shadow: 3px 3px black;
@@ -68,9 +57,13 @@ header {
 
 .header-name:hover {
   text-decoration: none;
-  /* color: rgb(105, 32, 105); */
   color: black;
   text-shadow: 3px 3px red;
+  transition: 1s;
+}
+
+.name-load {
+  animation: nameLoad 4s;
 }
 
 .nav-container {
@@ -92,7 +85,7 @@ header {
   color: var(--primary-color);
   text-shadow: 1px 1px black;
   display: block;
-  transition: 1s;
+  transition: .5s;
 }
 
 .nav-sections span:before {
@@ -112,9 +105,10 @@ header {
 
 .nav-sections span:hover  {
   color: black;
+  font-size: 30px;
   text-shadow: 1px 1px var(--primary-color);
   transform: translateY(-50%);
-  transition: .25s;
+  transition: .05s;
 }
 
 .section-title {
@@ -331,7 +325,6 @@ header {
 
 footer {
   height: 80px;
-  /* border-top: 1px solid red; */
   background-image: url("./assets/hero-background.jpg");
   display: flex;
   justify-content: space-between;
@@ -398,12 +391,11 @@ footer {
 
 @keyframes marquee {
   0% {transform: translateX(100%);}
- /* 50% {transform: translateX(0);} */
  100% {transform: translateX(-100%);} 
 }
 
-@keyframes textCircle {
-  0% { top: 0%; transform: translateY(0%); }
-  50% { top: 50%; transform: translateY(0%); }
-  100% { top: 50%; transform: translateY(-50%); }
+@keyframes nameLoad {
+  0% { transform: translateY(150%); opacity: .1 ; }
+  70% { transform: translateY(-20%); opacity: .6; }
+  100% { transform: translateY(0); opacity: 1; }
 }
